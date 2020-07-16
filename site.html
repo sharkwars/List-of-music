@@ -1,0 +1,67 @@
+<title>suas musicas favoritas</title>
+<h1>Musicas</h1>
+
+<h2>sei que e bem simples
+    mas eu ainda vou aprimorar esse site
+</h2>
+
+<!-- Arrumar-->
+<h2>fiz aqui as suas musicas favoritas</h2>
+<h2>e so clicar que vai ser redirecionada para elas</h2>
+
+<ul> 
+    <li>
+        <span wm-folder>Poesia Acústica</span>
+        <ul>
+            <li><a href="https://www.youtube.com/watch?v=bD6ifecX6rs">Poseia Acústica 2</a></li>
+            <li><a href="https://www.youtube.com/watch?v=DjNqxTODmuc">Poseia Acústica 3</a></li>
+            <li><a href="https://www.youtube.com/watch?v=VeJXVI7_oIg">Poseia Acústica 5</a></li>
+            <li><a href="https://www.youtube.com/watch?v=jK2k1P56Cno">Poseia Acústica 6</a></li>
+            <li><a href="https://www.youtube.com/watch?v=G4eTjFvp8CU">Poseia Acústica 7</a></li>
+        </ul>
+    </li>
+</ul>
+
+<ul>
+    <li>
+        <span wm-folder>Aleatorias</span>
+        <ul>
+           <li><a href="https://www.youtube.com/watch?v=B-KKPar_SHM">Rebeldia-Projota</a></li>
+           <li><a href="https://www.youtube.com/watch?v=xAMgQQMZ9Lk">The Brightside</a></li>
+           <li><a href="https://www.youtube.com/watch?v=xAMgQQMZ9Lk">Bom Dia 3030</a></li>
+           <li><a href="https://www.youtube.com/watch?v=xAMgQQMZ9Lk">Star Shopping</a></li>
+           <li><a href="https://www.youtube.com/watch?v=xAMgQQMZ9Lk">Losin Control</a></li>
+           <li><a href="https://www.youtube.com/watch?v=WRxwtV_x8nM">A Droga do Amor</a></li>
+           <li><a href="https://www.youtube.com/watch?v=FAucVNRx_mU">Jocelyn Flores</a></li>
+        </ul>
+    </li>
+</ul>
+
+<ul> 
+    <li>
+        <span wm-folder>Linkin Park</span>
+        <ul>
+            <li><a href="https://www.youtube.com/watch?v=kXYiU_JCYtU">Numb Linkin Park</a></li>
+            <li><a href="https://www.youtube.com/watch?v=ysSxxIqKNN0">New Divide Linkin Park</a></li>
+            <li><a href="https://www.youtube.com/watch?v=ScNNfyq3d_w">Castle of Glass Linkin Park</a></li>
+            <li><a href="https://www.youtube.com/watch?v=YLHpvjrFpe0">from The Inside Linkin Park</a></li>
+            <li><a href="https://www.youtube.com/watch?v=lvs68OKOquM">Talking To Myself Linkin Park</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dxytyRy-O1k">Burn It Down Linkin Park</a></li>
+            <li><a href="https://www.youtube.com/watch?v=eVTXPUF4Oz4">In The End Linkin Park</a></li>
+            <li><a href="https://www.youtube.com/watch?v=v2H4l9RpkwM">Breaking The Habit Linkin Park</a></li>
+        </ul>
+    </li>
+</ul>
+
+
+<link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
+<script>
+    document.querySelectorAll('[wm-folder]').forEach(folder => {
+        folder.onclick = function(e) {
+            const ul = folder.nextElementSibling
+            const d = ul.style.display
+            ul.style.display = d === 'none' ? 'block' : 'none'
+        }
+    })
+</script>
+
